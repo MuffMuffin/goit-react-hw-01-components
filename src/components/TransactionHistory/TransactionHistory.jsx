@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './TransactionHistory.module.css';
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -16,7 +17,7 @@ const Data = ({ item: { type, amount, currency } }) => {
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
+    <table className={css.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>

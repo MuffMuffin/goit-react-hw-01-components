@@ -1,0 +1,122 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 40px;
+  border: 5px solid;
+  border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+  box-shadow: 0px 0px 20px #ccc;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      #fafafafa 50% 72%,
+      transparent
+    ),
+    conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+}
+
+.description {
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  margin-bottom: 40px;
+  color: #959595;
+}
+
+.description > p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 200px rgba(194, 194, 194, 0.7);
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(
+    to right,
+    #ef5350,
+    #f48fb1,
+    #7e57c2,
+    #2196f3,
+    #26c6da,
+    #43a047,
+    #eeff41,
+    #f9a825,
+    #ff5722
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.tag {
+  font-style: italic;
+}
+
+.location {
+  font-weight: 600;
+}
+
+.stats {
+  display: inherit;
+}
+
+.stats > li {
+  display: inherit;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  width: 100px;
+  height: 90px;
+}
+
+.stats > li:nth-of-type(1) {
+  background: linear-gradient(
+    to bottom,
+    transparent 0 5%,
+    rgba(0, 0, 255, 0.8)
+  );
+  border-right: 1px solid rgba(204, 204, 204, 0.1);
+}
+
+.stats > li:nth-of-type(2) {
+  background: linear-gradient(
+    to bottom,
+    transparent 0 5%,
+    rgba(0, 255, 255, 0.9)
+  );
+}
+
+.stats > li:nth-of-type(3) {
+  background: linear-gradient(
+    to bottom,
+    transparent 0 5%,
+    rgba(0, 255, 0, 0.9)
+  );
+  border-left: 1px solid rgba(204, 204, 204, 0.15);
+}
+
+.label {
+  color: #fffffff0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.quantity {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
