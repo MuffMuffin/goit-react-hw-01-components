@@ -11,8 +11,8 @@
   background: linear-gradient(
       to bottom,
       transparent,
-      #ffffff 0% 70%,
-      transparent
+      #ffffff 0% 73%,
+      transparent 75% 100%
     ),
     conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
 }
@@ -23,7 +23,7 @@
   justify-content: inherit;
   align-items: inherit;
   margin-bottom: 50px;
-  color: #aaa;
+  color: #a2a2a2;
 }
 
 .description > p:not(:last-child) {
@@ -76,12 +76,10 @@
 
 .tag {
   font-style: italic;
-  font-weight: 700;
 }
 
 .location {
   font-weight: 700;
-  text-shadow: 0px 0px 10px #eee;
 }
 
 .stats {
