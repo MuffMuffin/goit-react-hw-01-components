@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Profile } from '../Profile/Profile';
 import user from '../Profile/user.json';
@@ -12,7 +12,9 @@ import css from './Holder.module.css';
 
 export const Holder = () => {
   const [activeTab, setActiveTab] = useState('tab1');
-
+  useEffect(() => {
+    document.title = 'GoIT React Homework 1';
+  }, []);
   return (
     <div className={css.holder}>
       <ul className={css.selector}>
