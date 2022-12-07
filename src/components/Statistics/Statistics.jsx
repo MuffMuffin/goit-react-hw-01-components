@@ -17,7 +17,7 @@ export const Statistics = ({ title = 'Upload stats', stats }) => {
 
       <ul className={css.statList}>
         {stats.map(stat => (
-          <li key={stat.id}>
+          <li key={stat.id} className={css.item}>
             <List stat={stat} />
           </li>
         ))}
