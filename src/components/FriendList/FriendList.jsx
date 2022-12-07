@@ -22,7 +22,10 @@ export const FriendList = ({ friends }) => {
   return (
     <ul className={css.friendList}>
       {friends.map(friend => (
-        <li className={css.item} key={friend.id}>
+        <li
+          className={friend.isOnline ? css.item : css.offlineItem}
+          key={friend.id}
+        >
           <Friend friend={friend} />
         </li>
       ))}
