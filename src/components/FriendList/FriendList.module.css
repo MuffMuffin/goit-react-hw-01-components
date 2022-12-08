@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: auto 0;
+  margin-bottom: 20px;
 }
 
 .item:not(:first-child) {

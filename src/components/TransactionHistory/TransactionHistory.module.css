@@ -1,5 +1,5 @@
 .transactionHistory {
-  width: 80%;
+  min-width: 60vw;
   border-style: hidden;
   border-collapse: collapse;
   border-radius: 10px;
