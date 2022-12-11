@@ -15,7 +15,6 @@
       transparent 75% 100%
     ),
     conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
-  margin-bottom: 20px;
 }
 
 .description {
